@@ -17,12 +17,23 @@ const getPosts = () => {
 }
 
 const createPost=(post, callback)=> {
-    setTimeout(()=> {
-        console.log("New element is added")
-        posts.push(post)
-        callback();
-    }, 1000)
+    return new Promise((resolve, reject)=> {
+        setTimeout(()=> {
+            
+            posts.push(post)
+            const error = true;
+            if(!error)
+                resolve()
+            else {
+                reject("Something went wrong");
+            }
+            
+        }, 2000)
+    })
+    
 }
 
 // getPosts();
-createPost({title:'Post three', body: 'This is post three'}, getPosts);
+createPost({title:'Post three', body: 'This is post three'})
+.then(getPosts)
+.catch(err=> console.log(err));

@@ -1,0 +1,22 @@
+{
+  "name": "asyncawaitpromise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PromiseAllExample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PushpendraKatoria/AsyncAwaitPromise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PushpendraKatoria/AsyncAwaitPromise/issues"
+  },
+  "homepage": "https://github.com/PushpendraKatoria/AsyncAwaitPromise#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
+}
